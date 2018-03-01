@@ -1,37 +1,48 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
-<title>Rockyer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>鍔ㄧ敾鏁堟灉</title>
+
+<style>
+body{perspective:1000px;}
+@keyframes zhuan{
+	0%{transform:rotateX(-20deg) rotateY(0deg);}
+	100%{transform:rotateX(-20deg) rotateY(360deg);}	
+}
+ul{width:160px;height:240px;margin:200px auto;position:relative;animation:zhuan 5s linear infinite;transform-style:preserve-3d;
+}
+ul li{position:absolute;left:0;top:0;}
+ul li img{width:160px; height:240px;}
+
+ul li:nth-child(1){transform:translateZ(300px);}
+ul li:nth-child(2){transform:rotateY(45deg) translateZ(300px);}
+ul li:nth-child(3){transform:rotateY(90deg) translateZ(300px);}
+ul li:nth-child(4){transform:rotateY(135deg) translateZ(300px);}
+ul li:nth-child(5){transform:rotateY(180deg) translateZ(300px);}
+ul li:nth-child(6){transform:rotateY(225deg) translateZ(300px);}
+ul li:nth-child(7){transform:rotateY(270deg) translateZ(300px);}
+ul li:nth-child(8){transform:rotateY(315deg) translateZ(300px);}
+
+
+
+
+
+
+</style>
 </head>
 <body>
-	<table padding="auto" width="400px" border="1" cellpadding="1" cellspacing="1">
-		<thead>
-			<tr>
-				<th>名称</th>
-				<th>年龄</th>
-				<th>性别</th>
-				<th>电话</th>
-				<th>住址</th>
-				<th>身高</th>
-				<th>体重</th>
-				<th>时间</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-			</tr>
-			<tr>
-				<td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td>
-			</tr>
-			<tr>
-				<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-			</tr>
-			<tr>
-				<td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td>
-			</tr>
-		</tbody>
-	</table>
+
+	<ul>
+    	<li><img src="shi1.jpeg" />1</li>
+        <li><img src="shi2.jpeg" />2</li>
+        <li><img src="shi3.jpg" />3</li>
+        <li><img src="shi4.jpeg" />4</li>
+        <li><img src="shi5.jpg" />5</li>
+        <li><img src="shi7.png" />6</li>
+        <li><img src="shi8.jpg" />7</li>
+        <li><img src="shi9.jpeg" />8</li>
+        
+    </ul>
 </body>
 </html>
